@@ -3,5 +3,32 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --body: #d7d7d7;
+  --highlight: #ff57b2;
+  --heading: #f8f8f8;
+  --background: #1a1d23;
+  --info: #bbbbbb;
+}
+html {
+  font-size: 62.5%;
+  max-width: 60%;
+  margin: auto;
+}
+body {
+  background: var(--background);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1.6rem 'Inter', sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 // TODO
