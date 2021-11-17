@@ -2,7 +2,7 @@ import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next';
 import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client';
 import { RichText } from 'prismic-dom';
-import { FiCalendar, FiUser, FiEye } from 'react-icons/fi';
+import { FiCalendar, FiUser, FiClock } from 'react-icons/fi';
 import { ptBR } from 'date-fns/locale';
 import Head from 'next/head';
 import { format } from 'date-fns';
@@ -83,7 +83,7 @@ export default function Post({ post }: PostProps) {
             </span>
 
             <span>
-              <FiEye />
+              <FiClock />
               {timeToRead} min
             </span>
           </div>
