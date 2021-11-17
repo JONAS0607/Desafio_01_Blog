@@ -1,3 +1,17 @@
-.container {
-  padding: 4rem 0;
+.headerContainer {
+  height: 6rem;
+}
+
+.headerContent {
+  max-width: 1120px;
+  height: 6rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+
+  display: flex;
+  align-items: center;
+
+  img {
+    padding: 3rem 0 0 5rem;
+  }
 }
