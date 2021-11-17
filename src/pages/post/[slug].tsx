@@ -1,16 +1,14 @@
 import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next';
 import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client';
+import { RichText } from 'prismic-dom';
 import { FiCalendar, FiUser, FiEye } from 'react-icons/fi';
-import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import Head from 'next/head';
+import { format } from 'date-fns';
 import Header from '../../components/Header';
-
-import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
 import { useRouter } from 'next/router';
-import { RichText } from 'prismic-dom';
 
 interface Post {
   first_publication_date: string | null;
